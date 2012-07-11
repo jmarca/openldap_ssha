@@ -1,0 +1,15 @@
+{
+    "name": "openldap_ssha",
+    "version": "0.0.1",
+    "description": "node.js versions of openldap compatible ssha password hashing and checking",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "author": "James E. Marca",
+    "license": "MIT",
+    "devDependencies": {
+        "mocha": "*",
+        "should": "*"
+    }
+}
