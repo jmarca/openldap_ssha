@@ -12,7 +12,7 @@ var known_hash = '{SSHA}c6AhsUGD7NfYyTofZoKiuP5MDqjAcKGi';
 
 describe('ssha_pass',function(){
     describe('known password and salt',function(){
-        it('should equal the value from Perl code',function(){
+        it('should equal the value from Perl code',function(done){
             ssha.ssha_pass(passwd, 'salt' , function(err,hash){
                 should.not.exist(err);
                 should.exist(hash);
@@ -21,12 +21,13 @@ describe('ssha_pass',function(){
                     should.not.exist(err);
                     should.exist(result);
                     result.should.equal(true);
+                    done();
                 })
             })
         })
     })
     describe('arbitrary password and salt',function(){
-        it('should be checkable',function(){
+        it('should be checkable',function(done){
             ssha.ssha_pass(randompass, function(err,hash){
                 should.not.exist(err);
                 should.exist(hash);
@@ -34,6 +35,7 @@ describe('ssha_pass',function(){
                     should.not.exist(err);
                     should.exist(result);
                     result.should.equal(true);
+                    done();
                 })
             })
         })
@@ -42,11 +44,12 @@ describe('ssha_pass',function(){
 })
 describe('checkssha',function(){
     describe('known password and hash',function(){
-        it('should verify the value from slappasswd code',function(){
+        it('should verify the value from slappasswd code',function(done){
             ssha.checkssha(passwd,known_hash,function(err,result){
                 should.not.exist(err);
                 should.exist(result);
                 result.should.equal(true);
+                done();
             })
         })
     })

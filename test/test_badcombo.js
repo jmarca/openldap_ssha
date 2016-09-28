@@ -12,7 +12,7 @@ var known_hash = '{SSHA}c6AhsUGD7NfYyTofZoKiuP5MDqjAcKGi';
 
 describe('reported issue 1',function(){
     describe('specific password and salt',function(){
-        it('should be checkable',function(){
+        it('should be checkable',function(done){
             ssha.ssha_pass(passwd,salt, function(err,hash){
                 should.not.exist(err);
                 should.exist(hash);
@@ -20,6 +20,7 @@ describe('reported issue 1',function(){
                     should.not.exist(err);
                     should.exist(result);
                     result.should.equal(true);
+                    done();
                 })
             })
         })
