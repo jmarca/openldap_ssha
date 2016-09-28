@@ -1,19 +1,19 @@
 {
-    "name": "openldap_ssha",
-    "version": "0.0.4",
-    "description": "node.js versions of openldap compatible ssha password hashing and checking",
-    "main": "index.js",
-    "scripts": {
-        "test": "mocha"
-    },
-    "author": "James E. Marca",
-    "license": "MIT",
-    "repository" :{
-        "type" : "git",
-        "url" : "https://github.com/jmarca/openldap_ssha.git"
-    },
-    "devDependencies": {
-        "mocha": "*",
-        "should": "*"
-    }
+  "name": "openldap_ssha",
+  "version": "0.0.5",
+  "description": "node.js versions of openldap compatible ssha password hashing and checking",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "James E. Marca",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmarca/openldap_ssha.git"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  }
 }
