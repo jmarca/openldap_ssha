@@ -8,7 +8,6 @@ var salt = 'salt';
 
 var randompass = crypto.randomBytes(32).toString('base64');
 
-var known_hash = '{SSHA}c6AhsUGD7NfYyTofZoKiuP5MDqjAcKGi';
 
 var non_ascii_passwd = 'éñÈhello£力';
 var precalculated_salt = 'e1eudpva6DrI7sq2UWjiJrDsXONjAizB9y2ed05ozC8=';
@@ -61,7 +60,19 @@ describe('ssha_pass',function(){
 })
 describe('checkssha',function(){
     describe('known password and hash',function(){
-        it('should verify the value from slappasswd code',function(done){
+        it('should verify the value from slappasswd code 1/2',function(done){
+            var known_hash = '{SSHA}c6AhsUGD7NfYyTofZoKiuP5MDqjAcKGi';
+            var known_pass = 'secret';
+            ssha.checkssha(passwd,known_hash,function(err,result){
+                should.not.exist(err);
+                should.exist(result);
+                result.should.equal(true);
+                done();
+            })
+        })
+        it('should verify the value from slappasswd code 2/2',function(done){
+            var known_hash = '{SSHA}WyQeTLbK0tJ9eOVr296u6PElsnKddCLm';
+            var known_pass = 'secret';
             ssha.checkssha(passwd,known_hash,function(err,result){
                 should.not.exist(err);
                 should.exist(result);
