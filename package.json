@@ -13,7 +13,7 @@
     "url": "https://github.com/jmarca/openldap_ssha.git"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*"
+    "mocha": "^3.4.2",
+    "should": "^11.2.1"
   }
 }

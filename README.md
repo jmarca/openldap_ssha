@@ -1,9 +1,9 @@
 [![NPM](https://nodei.co/npm/openldap_ssha.png)](https://npmjs.org/package/openldap_ssha)
 [![Build Status](https://travis-ci.org/jmarca/openldap_ssha.svg?branch=master)](https://travis-ci.org/jmarca/openldap_ssha)
+[![Greenkeeper badge](https://badges.greenkeeper.io/jmarca/openldap_ssha.svg)](https://greenkeeper.io/)
 
 # SSHA (salted SHA passwords)
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/jmarca/openldap_ssha.svg)](https://greenkeeper.io/)
 
 This is a utility library to use with openldap.  I originally wanted
 to use bcrypt because I searched the internet too much, but on reading
