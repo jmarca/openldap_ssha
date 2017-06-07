@@ -3,6 +3,8 @@
 
 # SSHA (salted SHA passwords)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jmarca/openldap_ssha.svg)](https://greenkeeper.io/)
+
 This is a utility library to use with openldap.  I originally wanted
 to use bcrypt because I searched the internet too much, but on reading
 the docs for openldap I discovered that the best available was "SSHA".
