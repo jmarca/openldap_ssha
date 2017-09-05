@@ -1,6 +1,6 @@
 {
   "name": "openldap_ssha",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "node.js versions of openldap compatible ssha password hashing and checking",
   "main": "index.js",
   "scripts": {
