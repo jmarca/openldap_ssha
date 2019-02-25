@@ -4,10 +4,6 @@ language: node_js
 node_js:
   - "node"
   - "6"
-  - "6.1"
-  - "5.11"
-  - "4"
-  - "4.2.4"
 env:
   - global:
     - WARNINGS_ARE_ERRORS=1
