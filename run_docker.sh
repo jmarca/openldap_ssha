@@ -64,5 +64,5 @@ relies_on_network(){
 
 openldap_ssha_sh(){
     del_stopped "openldap_ssha"
-    docker run --rm -it -v ${PWD}:/usr/src/dev  --name psql_pooler jmarca/psql_pooler sh
+    docker run --rm -it -v ${PWD}:/usr/src/dev  --name openldap_ssha jmarca/openldap_ssha sh
 }
