@@ -3,7 +3,7 @@
 language: node_js
 node_js:
   - "node"
-  - "6"
+  - "8"
 env:
   - global:
     - WARNINGS_ARE_ERRORS=1
