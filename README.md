@@ -1,6 +1,6 @@
 [![NPM](https://nodei.co/npm/openldap_ssha.png)](https://npmjs.org/package/openldap_ssha)
 [![Build Status](https://travis-ci.org/jmarca/openldap_ssha.svg?branch=master)](https://travis-ci.org/jmarca/openldap_ssha)
-[![Greenkeeper badge](https://badges.greenkeeper.io/jmarca/openldap_ssha.svg)](https://greenkeeper.io/)
+
 
 # SSHA (salted SHA passwords)
 
